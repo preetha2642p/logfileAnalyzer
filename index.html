@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LogMind - Log File Analyzer</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0c0b1e;--plum:#1a1740;--aurora:#5cf2d0;--orchid:#b583ff;--ember:#ffb454;--coral:#ff6b8b;--ice:#8ec5ff;--txt:#e9e6ff;--dim:#9a96c4;
+--glass:rgba(26,23,64,.62);--line:rgba(181,131,255,.22)}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--ink);color:var(--txt);font-family:Sora,system-ui,sans-serif;min-height:100%}
+body{overflow-x:hidden}
+#net{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+body:before{content:"";position:fixed;inset:-20%;z-index:0;pointer-events:none;
+background:radial-gradient(40% 35% at 20% 25%,rgba(92,242,208,.16),transparent 70%),radial-gradient(45% 40% at 80% 20%,rgba(181,131,255,.2),transparent 70%),radial-gradient(50% 40% at 60% 90%,rgba(255,107,139,.12),transparent 70%);animation:aurora 18s ease-in-out infinite alternate}
+@keyframes aurora{to{transform:translate3d(4%,3%,0) rotate(6deg) scale(1.08)}}
+/* boot */
+#boot{position:fixed;inset:0;z-index:20;display:grid;place-content:center;justify-items:center;gap:22px;text-align:center;transition:opacity 1s,transform 1s,visibility 1s}
+body.ready #boot{opacity:0;transform:scale(1.35);visibility:hidden}
+.orb{position:relative;width:170px;height:170px;display:grid;place-items:center}
+.orb b{width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--aurora) 35%,var(--orchid) 75%);box-shadow:0 0 60px var(--aurora),0 0 140px rgba(181,131,255,.7);animation:pulse 1.8s ease-in-out infinite}
+.orb i{position:absolute;inset:0;border-radius:50%;border:1.5px solid transparent;border-top-color:var(--aurora);border-bottom-color:var(--orchid);animation:spin 3s linear infinite}
+.orb i:nth-child(2){inset:18px;animation-duration:2s;animation-direction:reverse;border-top-color:var(--coral);border-bottom-color:var(--ice)}
+.orb i:nth-child(3){inset:-16px;animation-duration:6s;opacity:.5}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{transform:scale(1.18)}}
+#boot h1{font-size:clamp(2.4rem,7vw,4.4rem);font-weight:700;letter-spacing:.02em;background:linear-gradient(90deg,var(--aurora),var(--orchid),var(--coral),var(--aurora));background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 5s linear infinite}
+@keyframes flow{to{background-position:300%}}
+#typed{min-height:1.6em;color:var(--dim);font-weight:300}
+#typed:after{content:"|";color:var(--aurora);animation:blink .7s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.bar{width:min(320px,70vw);height:3px;background:var(--plum);border-radius:3px;overflow:hidden}
+#prog{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--aurora),var(--orchid));box-shadow:0 0 12px var(--aurora)}
+#skip{background:none;border:0;color:var(--dim);font:inherit;font-size:.8rem;cursor:pointer;text-decoration:underline}
+/* app */
+#app{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:36px 20px 70px;opacity:0;transform:translateY(30px);transition:opacity 1s .5s,transform 1s .5s}
+body.ready #app{opacity:1;transform:none}
+header{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;margin-bottom:26px}
+header h2{font-size:1.9rem;font-weight:700}header p{color:var(--dim);font-weight:300;margin-top:4px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{cursor:pointer;border:1px solid var(--line);background:var(--glass);color:var(--txt);padding:11px 18px;border-radius:999px;font:inherit;font-size:.9rem;backdrop-filter:blur(8px);transition:.25s}
+.btn:hover,.btn:focus-visible{border-color:var(--aurora);box-shadow:0 0 22px rgba(92,242,208,.35);outline:0}
+.btn.go{background:linear-gradient(90deg,var(--aurora),var(--orchid));color:#120f33;font-weight:700;border:0}
+body.drag #app:after{content:"Release to analyze";position:fixed;inset:14px;border:2px dashed var(--aurora);border-radius:28px;display:grid;place-items:center;font-size:2rem;background:rgba(12,11,30,.8);z-index:9}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:22px;backdrop-filter:blur(12px)}
+.card h3{font-size:1rem;font-weight:500;color:var(--dim);margin-bottom:16px}
+#stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:14px}
+.stat{padding:18px 20px}.stat small{color:var(--dim);font-size:.8rem}
+.stat strong{display:block;font-size:2.3rem;font-weight:700;margin-top:6px;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-bottom:14px}
+.c4{grid-column:span 4}.c8{grid-column:span 8}.c6{grid-column:span 6}.c12{grid-column:span 12}
+@media(max-width:860px){.c4,.c8,.c6{grid-column:span 12}}
+.donut{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.donut svg{width:150px;height:150px;transform:rotate(-90deg)}
+.donut circle{fill:none;stroke-width:15;stroke-linecap:round;transition:stroke-dasharray 1.4s cubic-bezier(.2,.8,.2,1)}
+.legend div{display:flex;align-items:center;gap:8px;margin:7px 0;font-size:.88rem}.legend i{width:10px;height:10px;border-radius:50%}
+.legend span{margin-left:auto;padding-left:14px;color:var(--dim);font-variant-numeric:tabular-nums}
+.hours{display:flex;align-items:flex-end;gap:5px;height:160px}
+.hours div{flex:1;border-radius:6px 6px 2px 2px;background:linear-gradient(var(--aurora),var(--orchid));transform-origin:bottom;animation:grow 1s cubic-bezier(.2,.8,.2,1) backwards;min-height:3px}
+.hours div.peak{background:linear-gradient(var(--coral),var(--ember));box-shadow:0 0 18px rgba(255,107,139,.6)}
+@keyframes grow{from{transform:scaleY(0)}}
+.axis{display:flex;justify-content:space-between;color:var(--dim);font-size:.72rem;margin-top:8px}
+.rank{list-style:none;padding:0}.rank li{margin:11px 0;font-size:.86rem}
+.rank .row{display:flex;justify-content:space-between;gap:10px}.rank .row span:last-child{color:var(--dim)}
+.rank .t{height:5px;border-radius:5px;background:rgba(255,255,255,.07);margin-top:6px;overflow:hidden}
+.rank .t i{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--orchid),var(--aurora));transition:width 1.2s cubic-bezier(.2,.8,.2,1);width:0}
+#insight{font-size:1.05rem;line-height:1.7;min-height:5.2em;font-weight:300}
+#insight:after{content:"";display:inline-block;width:8px;height:1.1em;background:var(--aurora);vertical-align:-3px;margin-left:3px;animation:blink .8s steps(1) infinite}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{border:1px solid var(--line);background:none;color:var(--dim);border-radius:999px;padding:6px 14px;font:inherit;font-size:.82rem;cursor:pointer}
+.chip.on{color:#120f33;background:var(--aurora);border-color:var(--aurora)}
+#q{flex:1;min-width:160px;background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:999px;color:var(--txt);padding:7px 16px;font:inherit;font-size:.85rem}
+#q:focus{outline:0;border-color:var(--orchid)}
+#stream{max-height:340px;overflow:auto;font:12.5px/1.75 ui-monospace,Menlo,Consolas,monospace}
+#stream div{white-space:pre-wrap;padding:1px 8px;border-left:3px solid transparent;border-radius:3px}
+#stream div:hover{background:rgba(255,255,255,.05)}
+.ERROR{border-color:var(--coral)!important}.WARN{border-color:var(--ember)!important}.INFO{border-color:var(--ice)!important}.DEBUG{border-color:var(--dim)!important}
+.lv-ERROR{color:var(--coral)}.lv-WARN{color:var(--ember)}.lv-INFO{color:var(--ice)}.lv-DEBUG{color:var(--dim)}
+#note{color:var(--dim);font-size:.8rem;margin-bottom:12px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style></head><body>
+<canvas id="net"></canvas>
+<div id="boot">
+  <div class="orb"><i></i><i></i><i></i><b></b></div>
+  <h1>LogMind</h1><p id="typed"></p>
+  <div class="bar"><span id="prog"></span></div>
+  <button id="skip">Skip intro</button>
+</div>
+<main id="app">
+  <header>
+    <div><h2>LogMind</h2><p>Drop a log file and see what went wrong, and when.</p></div>
+    <div class="btns">
+      <button class="btn go" id="pick">Choose log file</button>
+      <button class="btn" id="sample">Analyze sample</button>
+      <input type="file" id="file" accept=".log,.txt,.json" hidden>
+    </div>
+  </header>
+  <p id="note"></p>
+  <section id="stats"></section>
+  <section class="grid">
+    <div class="card c4"><h3>Severity mix</h3><div class="donut" id="donut"></div></div>
+    <div class="card c8"><h3>Activity by hour</h3><div class="hours" id="hours"></div><div class="axis"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>23:00</span></div></div>
+    <div class="card c6"><h3>Most frequent events</h3><ul class="rank" id="events"></ul></div>
+    <div class="card c6"><h3>Busiest sources</h3><ul class="rank" id="sources"></ul></div>
+  </section>
+  <section class="card c12" style="margin-bottom:14px"><h3>What the analyzer noticed</h3><p id="insight"></p></section>
+  <section class="card c12"><h3>Log stream</h3>
+    <div class="tools" id="tools"><button class="chip on" data-l="ALL">All</button><button class="chip" data-l="ERROR">Errors</button><button class="chip" data-l="WARN">Warnings</button><button class="chip" data-l="INFO">Info</button><button class="chip" data-l="DEBUG">Debug</button><input id="q" placeholder="Search messages or sources"></div>
+    <div id="stream"></div></section>
+</main>
+<script>
+const $=s=>document.querySelector(s),LV=["ERROR","WARN","INFO","DEBUG"],COL={ERROR:"#ff6b8b",WARN:"#ffb454",INFO:"#8ec5ff",DEBUG:"#9a96c4"};
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+/* ---------- neural background ---------- */
+const cv=$("#net"),cx=cv.getContext("2d");let W,H,N=[],mouse={x:-999,y:-999};
+function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;N=Array.from({length:Math.min(90,W/14|0)},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,p:Math.random()*6}))}
+addEventListener("resize",size);addEventListener("pointermove",e=>{mouse.x=e.clientX;mouse.y=e.clientY});size();
+function draw(t){cx.clearRect(0,0,W,H);
+ for(const a of N){if(!reduce){a.x+=a.vx;a.y+=a.vy}if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1;
+  const dx=a.x-mouse.x,dy=a.y-mouse.y,d=Math.hypot(dx,dy);if(d<120&&!reduce){a.x+=dx/d*1.6;a.y+=dy/d*1.6}}
+ for(let i=0;i<N.length;i++){const a=N[i];
+  for(let j=i+1;j<N.length;j++){const b=N[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+   if(d<140){cx.strokeStyle=`rgba(181,131,255,${(1-d/140)*.35})`;cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke();
+    const k=((t/900+a.p+j)%3)/3;if(k<1&&(i+j)%5==0){cx.fillStyle="#5cf2d0";cx.beginPath();cx.arc(a.x+(b.x-a.x)*k,a.y+(b.y-a.y)*k,1.8,0,7);cx.fill()}}}
+  cx.fillStyle=`rgba(92,242,208,${.5+Math.sin(t/600+a.p)*.4})`;cx.beginPath();cx.arc(a.x,a.y,2,0,7);cx.fill()}
+ requestAnimationFrame(draw)}
+requestAnimationFrame(draw);
+/* ---------- boot sequence ---------- */
+const steps=["Waking the analysis core","Teaching awk to read between the lines","Wiring grep into the neural mesh","Calibrating error radar","Ready. Show me your logs."];
+let booted=false;function enter(){if(booted)return;booted=true;document.body.classList.add("ready");loadSample()}
+async function boot(){const el=$("#typed"),pr=$("#prog");$("#skip").onclick=enter;
+ for(let i=0;i<steps.length&&!booted;i++){el.textContent="";
+  for(const ch of steps[i]){if(booted)return;el.textContent+=ch;await new Promise(r=>setTimeout(r,reduce?2:24))}
+  pr.style.transition="width .8s";pr.style.width=(i+1)*20+"%";await new Promise(r=>setTimeout(r,reduce?50:520))}
+ enter()}
+boot();
+/* ---------- parsing (mirrors analyze_logs.sh) ---------- */
+function parse(text){const re=/^(\d{4}-\d\d-\d\d)\s+(\d\d):\d\d:\d\d\s+(ERROR|WARN(?:ING)?|INFO|DEBUG)\s+\[([^\]]+)\]\s+(.*)$/;
+ const lines=[],lv={ERROR:0,WARN:0,INFO:0,DEBUG:0},hours=Array(24).fill(0),ev={},src={};let skipped=0;
+ for(const raw of text.split(/\r?\n/)){if(!raw.trim())continue;const m=re.exec(raw);if(!m){skipped++;continue}
+  const l=m[3].startsWith("WARN")?"WARN":m[3],k=m[5].replace(/\d+/g,"N");
+  lv[l]++;hours[+m[2]]++;ev[k]=(ev[k]||0)+1;src[m[4]]=(src[m[4]]||0)+1;lines.push({l,raw,t:raw.slice(0,19),s:m[4],m:m[5]})}
+ const top=o=>Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,5);
+ return{total:lines.length,skipped,first:lines[0]?.t||"-",last:lines.at(-1)?.t||"-",levels:lv,hours,events:top(ev),sources:top(src),lines,
+  errors:lines.filter(x=>x.l==="ERROR").slice(-5).map(x=>({t:x.t,src:x.s,msg:x.m}))}}
+function genSample(n=800){const S=["auth","db","api","cache","scheduler","payments","mailer"],L=["INFO","INFO","INFO","INFO","INFO","DEBUG","DEBUG","WARN","WARN","ERROR"],
+ M=["User 4821 logged in","Request served in 143ms","Cache hit for key 77","Connection timeout after 30s","Retrying job 912 attempt 3","Disk usage at 91%","Payment 5521 declined by gateway","Slow query took 2400ms","Invalid token for session 330","Health check passed","Null reference in handler 12"];
+ const p=x=>String(x).padStart(2,"0"),r=a=>a[Math.random()*a.length|0],o=[];
+ for(let i=0;i<n;i++){const h=i%97==0?3:8+(Math.random()*Math.random()*14|0);o.push(`2026-10-07 ${p(h)}:${p(Math.random()*60|0)}:${p(Math.random()*60|0)} ${r(L)} [${r(S)}] ${r(M)}`)}
+ return o.sort((a,b)=>a.slice(11)<b.slice(11)?-1:1).join("\n")}
+/* ---------- rendering ---------- */
+let cur=null,filter="ALL";
+function count(el,to,suffix=""){if(reduce){el.textContent=to+suffix;return}const t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1200);el.textContent=Math.round(to*(1-Math.pow(1-k,3))*10)/10+suffix;if(k<1)requestAnimationFrame(f);else el.textContent=to+suffix})(t0)}
+function render(s,label){cur=s;$("#note").textContent=label+(s.skipped?` - ${s.skipped} lines didn't match the expected format and were skipped.`:"");
+ const rate=s.total?+(s.levels.ERROR*100/s.total).toFixed(1):0;
+ $("#stats").innerHTML=[["Log lines",s.total,"",""],["Errors",s.levels.ERROR,"","var(--coral)"],["Warnings",s.levels.WARN,"","var(--ember)"],["Error rate",rate,"%","var(--aurora)"]].map(x=>`<div class="card stat"><small>${x[0]}</small><strong style="color:${x[3]||"inherit"}" data-v="${x[1]}" data-s="${x[2]}">0</strong></div>`).join("")+`<div class="card stat"><small>Time span</small><strong style="font-size:1rem;line-height:1.5;font-weight:500">${s.first}<br>${s.last}</strong></div>`;
+ document.querySelectorAll("#stats [data-v]").forEach(e=>count(e,+e.dataset.v,e.dataset.s));
+ const C=2*Math.PI*52;let off=0,segs="";
+ LV.forEach(l=>{const len=s.total?s.levels[l]/s.total*C:0;segs+=`<circle cx="75" cy="75" r="52" stroke="${COL[l]}" stroke-dasharray="0 ${C}" data-len="${len}" stroke-dashoffset="${-off}"/>`;off+=len});
+ $("#donut").innerHTML=`<svg viewBox="0 0 150 150">${segs}</svg><div class="legend">${LV.map(l=>`<div><i style="background:${COL[l]}"></i>${l[0]+l.slice(1).toLowerCase()}<span>${s.levels[l]}</span></div>`).join("")}</div>`;
+ setTimeout(()=>document.querySelectorAll("#donut circle").forEach(c=>c.setAttribute("stroke-dasharray",`${Math.max(0,c.dataset.len-3)} ${C}`)),60);
+ const mx=Math.max(...s.hours,1),pk=s.hours.indexOf(Math.max(...s.hours));
+ $("#hours").innerHTML=s.hours.map((v,i)=>`<div class="${i==pk&&v?"peak":""}" title="${String(i).padStart(2,"0")}:00 - ${v} events" style="height:${v/mx*100}%;animation-delay:${i*40}ms"></div>`).join("");
+ const rank=(id,a)=>{const m=Math.max(...a.map(x=>x[1]),1);$(id).innerHTML=a.map(x=>`<li><div class="row"><span>${esc(x[0])}</span><span>${x[1]}</span></div><div class="t"><i data-w="${x[1]/m*100}"></i></div></li>`).join("")};
+ rank("#events",s.events);rank("#sources",s.sources);
+ setTimeout(()=>document.querySelectorAll(".rank i").forEach(i=>i.style.width=i.dataset.w+"%"),80);
+ const e=s.events[0],er=s.events.find(x=>/error|timeout|invalid|null|declined|slow/i.test(x[0]));
+ typeInsight(s.total?`Out of ${s.total} lines, ${rate}% are errors and ${s.levels.WARN} are warnings. Activity peaks at ${String(pk).padStart(2,"0")}:00 with ${s.hours[pk]} events. The most repeated event is "${e[0]}" (${e[1]} times)${er&&er!==e?`, and the most repeated problem is "${er[0]}" (${er[1]} times)`:""}. ${s.sources[0][0]} is the busiest source, so start there when you investigate.`:"No readable log lines found. Expected: YYYY-MM-DD HH:MM:SS LEVEL [source] message.");
+ filter="ALL";document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c.dataset.l=="ALL"));stream()}
+let tk=0;async function typeInsight(t){const id=++tk,el=$("#insight");el.textContent="";for(const ch of t){if(id!=tk)return;el.textContent+=ch;await new Promise(r=>setTimeout(r,reduce?0:14))}}
+function stream(){if(!cur)return;const q=$("#q").value.toLowerCase();
+ const rows=cur.lines?.length?cur.lines:cur.errors.map(x=>({l:"ERROR",raw:`${x.t} ERROR [${x.src}] ${x.msg}`,s:x.src,m:x.msg}));
+ $("#stream").innerHTML=rows.filter(r=>(filter=="ALL"||r.l==filter)&&(!q||r.raw.toLowerCase().includes(q))).slice(0,400)
+  .map(r=>`<div class="${r.l}">${esc(r.raw).replace(r.l,`<b class="lv-${r.l}">${r.l}</b>`)}</div>`).join("")||"<div>No lines match this filter. Clear the search or pick All.</div>"}
+$("#tools").onclick=e=>{const c=e.target.closest(".chip");if(!c)return;filter=c.dataset.l;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x==c));stream()};
+$("#q").oninput=stream;
+/* ---------- input ---------- */
+async function api(u,o){const r=await fetch(u,o);if(!r.ok)throw 0;return r.json()}
+async function loadSample(){const m="Showing a generated sample log. Drop your own file to replace it.";try{render(await api("/api/sample"),m+" Analyzed by Python.")}catch{render(parse(genSample()),m)}}
+async function loadFile(f){const t=await f.text();
+ if(f.name.endsWith(".json")){try{const j=JSON.parse(t);j.skipped=0;j.hours=j.hours||Array(24).fill(0);render(j,`${f.name} (report from analyze_logs.sh)`)}catch{$("#note").textContent="That JSON isn't a LogMind report. Create one with: python analyzer.py app.log --json"}}
+ else{try{render(await api("/api/analyze",{method:"POST",body:t}),f.name+" (analyzed by Python)")}catch{render(parse(t),f.name)}}}
+$("#sample").onclick=loadSample;$("#pick").onclick=()=>$("#file").click();$("#file").onchange=e=>e.target.files[0]&&loadFile(e.target.files[0]);
+addEventListener("dragover",e=>{e.preventDefault();document.body.classList.add("drag")});
+addEventListener("dragleave",e=>{if(!e.relatedTarget)document.body.classList.remove("drag")});
+addEventListener("drop",e=>{e.preventDefault();document.body.classList.remove("drag");e.dataTransfer.files[0]&&loadFile(e.dataTransfer.files[0])});
+</script></body></html>

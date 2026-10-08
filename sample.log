@@ -1,0 +1,800 @@
+2026-10-07 03:08:38 INFO [auth] Health check passed
+2026-10-07 03:09:06 ERROR [payments] User 4821 logged in
+2026-10-07 03:18:03 INFO [api] Cache hit for key 77
+2026-10-07 03:19:16 INFO [cache] Retrying job 912 attempt 3
+2026-10-07 03:21:17 INFO [db] Slow query took 2400ms
+2026-10-07 03:47:20 DEBUG [payments] Request served in 143ms
+2026-10-07 03:52:02 DEBUG [auth] Null reference in handler 12
+2026-10-07 03:56:12 INFO [payments] Connection timeout after 30s
+2026-10-07 08:00:07 INFO [cache] Request served in 143ms
+2026-10-07 08:00:28 DEBUG [db] User 4821 logged in
+2026-10-07 08:00:43 INFO [api] Disk usage at 91%
+2026-10-07 08:01:19 INFO [auth] Null reference in handler 12
+2026-10-07 08:01:35 WARN [db] Health check passed
+2026-10-07 08:02:14 DEBUG [cache] Invalid token for session 330
+2026-10-07 08:02:23 INFO [scheduler] Invalid token for session 330
+2026-10-07 08:02:29 WARN [api] Connection timeout after 30s
+2026-10-07 08:02:50 DEBUG [api] User 4821 logged in
+2026-10-07 08:03:10 ERROR [db] Retrying job 912 attempt 3
+2026-10-07 08:03:16 DEBUG [mailer] Cache hit for key 77
+2026-10-07 08:03:26 DEBUG [api] Connection timeout after 30s
+2026-10-07 08:03:26 WARN [scheduler] Health check passed
+2026-10-07 08:03:42 ERROR [auth] Null reference in handler 12
+2026-10-07 08:03:47 INFO [db] Disk usage at 91%
+2026-10-07 08:05:16 WARN [auth] Request served in 143ms
+2026-10-07 08:05:41 DEBUG [cache] Payment 5521 declined by gateway
+2026-10-07 08:05:50 ERROR [api] Invalid token for session 330
+2026-10-07 08:05:55 INFO [payments] Request served in 143ms
+2026-10-07 08:06:12 INFO [auth] Connection timeout after 30s
+2026-10-07 08:06:19 WARN [cache] Request served in 143ms
+2026-10-07 08:07:09 DEBUG [db] Disk usage at 91%
+2026-10-07 08:07:11 INFO [api] Null reference in handler 12
+2026-10-07 08:07:27 WARN [scheduler] Null reference in handler 12
+2026-10-07 08:07:31 DEBUG [db] Retrying job 912 attempt 3
+2026-10-07 08:07:33 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 08:07:55 DEBUG [db] Disk usage at 91%
+2026-10-07 08:08:00 ERROR [scheduler] Connection timeout after 30s
+2026-10-07 08:08:52 INFO [payments] Slow query took 2400ms
+2026-10-07 08:08:54 WARN [cache] Null reference in handler 12
+2026-10-07 08:09:08 INFO [scheduler] Health check passed
+2026-10-07 08:09:20 INFO [mailer] Null reference in handler 12
+2026-10-07 08:09:29 WARN [payments] Mail queue length 58
+2026-10-07 08:09:53 WARN [db] Health check passed
+2026-10-07 08:10:00 WARN [scheduler] Health check passed
+2026-10-07 08:10:09 ERROR [auth] Cache hit for key 77
+2026-10-07 08:10:53 ERROR [scheduler] Invalid token for session 330
+2026-10-07 08:11:05 INFO [scheduler] User 4821 logged in
+2026-10-07 08:11:12 DEBUG [mailer] Retrying job 912 attempt 3
+2026-10-07 08:11:21 ERROR [db] Retrying job 912 attempt 3
+2026-10-07 08:11:31 WARN [auth] Invalid token for session 330
+2026-10-07 08:11:44 WARN [payments] Request served in 143ms
+2026-10-07 08:11:53 DEBUG [scheduler] Slow query took 2400ms
+2026-10-07 08:11:59 INFO [db] Invalid token for session 330
+2026-10-07 08:12:50 INFO [mailer] Null reference in handler 12
+2026-10-07 08:13:42 DEBUG [cache] Request served in 143ms
+2026-10-07 08:14:09 INFO [auth] Invalid token for session 330
+2026-10-07 08:14:12 INFO [auth] Retrying job 912 attempt 3
+2026-10-07 08:14:53 DEBUG [api] Mail queue length 58
+2026-10-07 08:15:03 INFO [cache] User 4821 logged in
+2026-10-07 08:15:03 WARN [db] Disk usage at 91%
+2026-10-07 08:15:05 WARN [cache] Request served in 143ms
+2026-10-07 08:15:43 INFO [api] Invalid token for session 330
+2026-10-07 08:15:54 INFO [api] Slow query took 2400ms
+2026-10-07 08:16:21 DEBUG [db] Payment 5521 declined by gateway
+2026-10-07 08:16:21 INFO [db] Invalid token for session 330
+2026-10-07 08:16:45 INFO [mailer] Null reference in handler 12
+2026-10-07 08:17:15 INFO [mailer] Slow query took 2400ms
+2026-10-07 08:18:16 DEBUG [api] Connection timeout after 30s
+2026-10-07 08:18:16 DEBUG [payments] Connection timeout after 30s
+2026-10-07 08:18:40 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 08:19:06 DEBUG [cache] User 4821 logged in
+2026-10-07 08:20:31 WARN [auth] Disk usage at 91%
+2026-10-07 08:21:02 WARN [payments] Payment 5521 declined by gateway
+2026-10-07 08:21:19 DEBUG [payments] Health check passed
+2026-10-07 08:21:20 WARN [payments] Disk usage at 91%
+2026-10-07 08:21:31 INFO [auth] Invalid token for session 330
+2026-10-07 08:21:40 INFO [auth] Cache hit for key 77
+2026-10-07 08:22:28 INFO [mailer] Connection timeout after 30s
+2026-10-07 08:22:40 DEBUG [auth] Health check passed
+2026-10-07 08:22:42 DEBUG [mailer] Mail queue length 58
+2026-10-07 08:23:23 WARN [mailer] Disk usage at 91%
+2026-10-07 08:23:59 WARN [db] User 4821 logged in
+2026-10-07 08:24:40 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 08:24:48 WARN [auth] Null reference in handler 12
+2026-10-07 08:24:49 DEBUG [mailer] User 4821 logged in
+2026-10-07 08:25:28 INFO [auth] Request served in 143ms
+2026-10-07 08:25:45 WARN [cache] Retrying job 912 attempt 3
+2026-10-07 08:25:52 INFO [mailer] Connection timeout after 30s
+2026-10-07 08:25:53 INFO [scheduler] Slow query took 2400ms
+2026-10-07 08:25:57 INFO [db] Health check passed
+2026-10-07 08:26:02 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 08:26:14 DEBUG [mailer] Null reference in handler 12
+2026-10-07 08:26:37 INFO [api] Cache hit for key 77
+2026-10-07 08:27:03 INFO [mailer] Null reference in handler 12
+2026-10-07 08:27:12 WARN [api] Invalid token for session 330
+2026-10-07 08:27:46 WARN [cache] Slow query took 2400ms
+2026-10-07 08:27:47 WARN [db] Slow query took 2400ms
+2026-10-07 08:28:14 WARN [payments] Retrying job 912 attempt 3
+2026-10-07 08:28:44 INFO [payments] Null reference in handler 12
+2026-10-07 08:29:09 INFO [auth] User 4821 logged in
+2026-10-07 08:29:18 DEBUG [db] Slow query took 2400ms
+2026-10-07 08:29:31 INFO [api] Request served in 143ms
+2026-10-07 08:29:43 INFO [mailer] Connection timeout after 30s
+2026-10-07 08:29:59 INFO [db] Invalid token for session 330
+2026-10-07 08:30:16 DEBUG [payments] Request served in 143ms
+2026-10-07 08:30:18 DEBUG [auth] Retrying job 912 attempt 3
+2026-10-07 08:30:46 INFO [db] Invalid token for session 330
+2026-10-07 08:30:47 WARN [api] Null reference in handler 12
+2026-10-07 08:30:58 WARN [scheduler] Mail queue length 58
+2026-10-07 08:31:33 WARN [payments] Cache hit for key 77
+2026-10-07 08:31:47 INFO [mailer] Cache hit for key 77
+2026-10-07 08:31:50 INFO [cache] Retrying job 912 attempt 3
+2026-10-07 08:31:57 DEBUG [payments] Mail queue length 58
+2026-10-07 08:32:23 INFO [api] Payment 5521 declined by gateway
+2026-10-07 08:33:15 INFO [payments] Slow query took 2400ms
+2026-10-07 08:33:51 DEBUG [cache] Retrying job 912 attempt 3
+2026-10-07 08:33:54 INFO [mailer] Slow query took 2400ms
+2026-10-07 08:34:20 WARN [auth] Connection timeout after 30s
+2026-10-07 08:34:36 WARN [api] Connection timeout after 30s
+2026-10-07 08:34:47 INFO [auth] Mail queue length 58
+2026-10-07 08:34:57 WARN [payments] Health check passed
+2026-10-07 08:35:25 WARN [mailer] Connection timeout after 30s
+2026-10-07 08:35:31 WARN [db] Connection timeout after 30s
+2026-10-07 08:35:43 WARN [auth] Health check passed
+2026-10-07 08:35:47 INFO [payments] Slow query took 2400ms
+2026-10-07 08:35:58 WARN [cache] Mail queue length 58
+2026-10-07 08:36:19 DEBUG [db] Null reference in handler 12
+2026-10-07 08:36:48 DEBUG [cache] Slow query took 2400ms
+2026-10-07 08:36:52 WARN [cache] Slow query took 2400ms
+2026-10-07 08:37:06 INFO [api] Retrying job 912 attempt 3
+2026-10-07 08:37:51 DEBUG [scheduler] Retrying job 912 attempt 3
+2026-10-07 08:38:11 DEBUG [payments] Retrying job 912 attempt 3
+2026-10-07 08:38:20 DEBUG [mailer] Payment 5521 declined by gateway
+2026-10-07 08:38:23 WARN [payments] Connection timeout after 30s
+2026-10-07 08:38:30 INFO [auth] Slow query took 2400ms
+2026-10-07 08:38:32 INFO [payments] User 4821 logged in
+2026-10-07 08:38:44 ERROR [auth] Invalid token for session 330
+2026-10-07 08:38:44 INFO [api] Request served in 143ms
+2026-10-07 08:38:53 WARN [cache] Mail queue length 58
+2026-10-07 08:39:22 DEBUG [scheduler] User 4821 logged in
+2026-10-07 08:39:22 WARN [api] Retrying job 912 attempt 3
+2026-10-07 08:39:27 WARN [mailer] Mail queue length 58
+2026-10-07 08:39:34 ERROR [cache] Connection timeout after 30s
+2026-10-07 08:39:57 INFO [db] Mail queue length 58
+2026-10-07 08:40:02 INFO [db] Mail queue length 58
+2026-10-07 08:40:13 WARN [mailer] Cache hit for key 77
+2026-10-07 08:40:18 INFO [scheduler] Connection timeout after 30s
+2026-10-07 08:40:29 ERROR [payments] Mail queue length 58
+2026-10-07 08:40:46 DEBUG [payments] Retrying job 912 attempt 3
+2026-10-07 08:40:52 INFO [db] Null reference in handler 12
+2026-10-07 08:41:24 DEBUG [db] Connection timeout after 30s
+2026-10-07 08:41:31 INFO [scheduler] Invalid token for session 330
+2026-10-07 08:41:36 DEBUG [cache] Null reference in handler 12
+2026-10-07 08:41:54 WARN [auth] Disk usage at 91%
+2026-10-07 08:42:02 INFO [mailer] Connection timeout after 30s
+2026-10-07 08:42:15 DEBUG [scheduler] Disk usage at 91%
+2026-10-07 08:43:34 INFO [mailer] Payment 5521 declined by gateway
+2026-10-07 08:43:48 INFO [db] Null reference in handler 12
+2026-10-07 08:44:12 ERROR [db] Null reference in handler 12
+2026-10-07 08:44:18 INFO [cache] Health check passed
+2026-10-07 08:44:31 INFO [scheduler] Health check passed
+2026-10-07 08:44:39 INFO [api] Mail queue length 58
+2026-10-07 08:45:09 INFO [payments] Null reference in handler 12
+2026-10-07 08:45:12 INFO [db] Null reference in handler 12
+2026-10-07 08:45:23 WARN [cache] Disk usage at 91%
+2026-10-07 08:45:45 INFO [db] Connection timeout after 30s
+2026-10-07 08:46:07 WARN [scheduler] Slow query took 2400ms
+2026-10-07 08:46:57 ERROR [scheduler] Disk usage at 91%
+2026-10-07 08:47:10 INFO [auth] Slow query took 2400ms
+2026-10-07 08:47:41 INFO [cache] Connection timeout after 30s
+2026-10-07 08:47:48 INFO [payments] Connection timeout after 30s
+2026-10-07 08:48:15 DEBUG [api] Retrying job 912 attempt 3
+2026-10-07 08:48:26 INFO [auth] Connection timeout after 30s
+2026-10-07 08:48:29 WARN [scheduler] Retrying job 912 attempt 3
+2026-10-07 08:48:48 INFO [mailer] Mail queue length 58
+2026-10-07 08:48:54 WARN [scheduler] Request served in 143ms
+2026-10-07 08:49:19 ERROR [cache] Slow query took 2400ms
+2026-10-07 08:49:30 WARN [cache] Disk usage at 91%
+2026-10-07 08:49:43 DEBUG [auth] Health check passed
+2026-10-07 08:49:52 DEBUG [api] Connection timeout after 30s
+2026-10-07 08:51:32 INFO [scheduler] Request served in 143ms
+2026-10-07 08:51:57 INFO [payments] Disk usage at 91%
+2026-10-07 08:52:21 WARN [api] User 4821 logged in
+2026-10-07 08:52:22 DEBUG [api] Cache hit for key 77
+2026-10-07 08:52:41 DEBUG [db] Retrying job 912 attempt 3
+2026-10-07 08:52:49 INFO [auth] Retrying job 912 attempt 3
+2026-10-07 08:53:03 INFO [payments] Invalid token for session 330
+2026-10-07 08:53:16 DEBUG [db] Invalid token for session 330
+2026-10-07 08:53:34 INFO [auth] Invalid token for session 330
+2026-10-07 08:53:51 ERROR [scheduler] Null reference in handler 12
+2026-10-07 08:53:56 INFO [mailer] Disk usage at 91%
+2026-10-07 08:54:05 DEBUG [mailer] Request served in 143ms
+2026-10-07 08:54:07 WARN [auth] Retrying job 912 attempt 3
+2026-10-07 08:54:38 INFO [scheduler] Health check passed
+2026-10-07 08:55:02 INFO [mailer] Invalid token for session 330
+2026-10-07 08:55:20 INFO [scheduler] Retrying job 912 attempt 3
+2026-10-07 08:55:21 INFO [db] Cache hit for key 77
+2026-10-07 08:55:37 WARN [cache] Mail queue length 58
+2026-10-07 08:55:40 DEBUG [payments] Cache hit for key 77
+2026-10-07 08:55:50 INFO [api] Retrying job 912 attempt 3
+2026-10-07 08:56:06 DEBUG [payments] Cache hit for key 77
+2026-10-07 08:56:51 WARN [api] Payment 5521 declined by gateway
+2026-10-07 08:57:16 WARN [scheduler] Mail queue length 58
+2026-10-07 08:57:22 WARN [scheduler] Request served in 143ms
+2026-10-07 08:57:29 INFO [payments] Cache hit for key 77
+2026-10-07 08:57:57 DEBUG [payments] Mail queue length 58
+2026-10-07 08:57:59 DEBUG [payments] Request served in 143ms
+2026-10-07 08:58:26 DEBUG [payments] Health check passed
+2026-10-07 08:58:41 INFO [db] Null reference in handler 12
+2026-10-07 08:58:56 WARN [payments] Null reference in handler 12
+2026-10-07 08:59:19 ERROR [scheduler] Request served in 143ms
+2026-10-07 08:59:52 INFO [cache] Connection timeout after 30s
+2026-10-07 09:01:03 ERROR [api] Request served in 143ms
+2026-10-07 09:01:24 DEBUG [db] Request served in 143ms
+2026-10-07 09:01:55 DEBUG [db] Connection timeout after 30s
+2026-10-07 09:02:27 INFO [scheduler] Request served in 143ms
+2026-10-07 09:03:10 INFO [cache] Request served in 143ms
+2026-10-07 09:03:10 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 09:03:33 DEBUG [mailer] Mail queue length 58
+2026-10-07 09:03:44 WARN [cache] Request served in 143ms
+2026-10-07 09:04:07 INFO [auth] Request served in 143ms
+2026-10-07 09:04:11 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 09:04:59 INFO [mailer] Disk usage at 91%
+2026-10-07 09:05:03 INFO [api] Retrying job 912 attempt 3
+2026-10-07 09:05:53 WARN [payments] Null reference in handler 12
+2026-10-07 09:06:03 DEBUG [api] Slow query took 2400ms
+2026-10-07 09:06:06 DEBUG [payments] Mail queue length 58
+2026-10-07 09:06:30 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 09:08:12 INFO [mailer] Connection timeout after 30s
+2026-10-07 09:09:23 INFO [scheduler] Invalid token for session 330
+2026-10-07 09:09:28 INFO [payments] Null reference in handler 12
+2026-10-07 09:09:30 DEBUG [db] Retrying job 912 attempt 3
+2026-10-07 09:09:38 ERROR [cache] Health check passed
+2026-10-07 09:10:27 INFO [api] Mail queue length 58
+2026-10-07 09:10:28 ERROR [api] Mail queue length 58
+2026-10-07 09:10:37 INFO [api] Connection timeout after 30s
+2026-10-07 09:10:45 WARN [mailer] Payment 5521 declined by gateway
+2026-10-07 09:10:55 DEBUG [auth] Cache hit for key 77
+2026-10-07 09:11:12 DEBUG [payments] Slow query took 2400ms
+2026-10-07 09:11:24 INFO [scheduler] Cache hit for key 77
+2026-10-07 09:11:48 INFO [auth] Mail queue length 58
+2026-10-07 09:11:58 DEBUG [scheduler] Slow query took 2400ms
+2026-10-07 09:13:16 ERROR [scheduler] Invalid token for session 330
+2026-10-07 09:13:32 INFO [mailer] Invalid token for session 330
+2026-10-07 09:13:36 WARN [payments] Request served in 143ms
+2026-10-07 09:14:29 INFO [db] Slow query took 2400ms
+2026-10-07 09:14:41 INFO [db] Retrying job 912 attempt 3
+2026-10-07 09:15:15 INFO [mailer] Request served in 143ms
+2026-10-07 09:15:51 WARN [payments] Invalid token for session 330
+2026-10-07 09:15:56 INFO [scheduler] Health check passed
+2026-10-07 09:16:12 INFO [mailer] Connection timeout after 30s
+2026-10-07 09:16:41 DEBUG [auth] Request served in 143ms
+2026-10-07 09:16:43 INFO [scheduler] User 4821 logged in
+2026-10-07 09:17:14 WARN [auth] Connection timeout after 30s
+2026-10-07 09:17:47 DEBUG [api] Null reference in handler 12
+2026-10-07 09:17:55 INFO [cache] Cache hit for key 77
+2026-10-07 09:18:14 ERROR [scheduler] Null reference in handler 12
+2026-10-07 09:19:20 INFO [payments] Invalid token for session 330
+2026-10-07 09:21:16 INFO [db] Connection timeout after 30s
+2026-10-07 09:22:03 INFO [auth] Slow query took 2400ms
+2026-10-07 09:22:08 WARN [auth] Cache hit for key 77
+2026-10-07 09:22:27 INFO [mailer] Disk usage at 91%
+2026-10-07 09:22:49 INFO [api] Connection timeout after 30s
+2026-10-07 09:22:51 ERROR [auth] Retrying job 912 attempt 3
+2026-10-07 09:23:18 WARN [payments] Invalid token for session 330
+2026-10-07 09:23:23 INFO [scheduler] Disk usage at 91%
+2026-10-07 09:23:38 INFO [api] Disk usage at 91%
+2026-10-07 09:23:47 INFO [api] Mail queue length 58
+2026-10-07 09:24:29 INFO [db] Request served in 143ms
+2026-10-07 09:24:42 INFO [db] Connection timeout after 30s
+2026-10-07 09:25:04 ERROR [auth] Request served in 143ms
+2026-10-07 09:25:18 WARN [auth] User 4821 logged in
+2026-10-07 09:26:08 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 09:26:22 INFO [mailer] Health check passed
+2026-10-07 09:27:14 DEBUG [api] Retrying job 912 attempt 3
+2026-10-07 09:28:14 WARN [cache] Retrying job 912 attempt 3
+2026-10-07 09:29:18 INFO [api] Mail queue length 58
+2026-10-07 09:29:41 INFO [auth] Cache hit for key 77
+2026-10-07 09:29:46 INFO [cache] Invalid token for session 330
+2026-10-07 09:30:18 INFO [mailer] Slow query took 2400ms
+2026-10-07 09:31:25 WARN [cache] Disk usage at 91%
+2026-10-07 09:32:11 ERROR [api] Payment 5521 declined by gateway
+2026-10-07 09:33:19 INFO [db] Slow query took 2400ms
+2026-10-07 09:33:29 DEBUG [db] Invalid token for session 330
+2026-10-07 09:34:12 INFO [cache] Health check passed
+2026-10-07 09:34:20 DEBUG [mailer] Connection timeout after 30s
+2026-10-07 09:34:21 INFO [payments] Cache hit for key 77
+2026-10-07 09:34:27 WARN [db] Request served in 143ms
+2026-10-07 09:34:49 WARN [mailer] Invalid token for session 330
+2026-10-07 09:35:27 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 09:35:43 DEBUG [payments] Mail queue length 58
+2026-10-07 09:36:11 DEBUG [cache] Cache hit for key 77
+2026-10-07 09:36:11 INFO [api] Retrying job 912 attempt 3
+2026-10-07 09:36:28 WARN [mailer] Connection timeout after 30s
+2026-10-07 09:37:25 DEBUG [api] User 4821 logged in
+2026-10-07 09:37:55 WARN [payments] Slow query took 2400ms
+2026-10-07 09:38:51 DEBUG [db] Health check passed
+2026-10-07 09:38:54 DEBUG [api] Invalid token for session 330
+2026-10-07 09:39:26 INFO [db] Invalid token for session 330
+2026-10-07 09:39:54 INFO [payments] Disk usage at 91%
+2026-10-07 09:39:54 INFO [payments] Invalid token for session 330
+2026-10-07 09:40:06 INFO [db] Mail queue length 58
+2026-10-07 09:40:15 DEBUG [db] Mail queue length 58
+2026-10-07 09:41:23 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 09:41:29 WARN [mailer] Health check passed
+2026-10-07 09:42:25 WARN [api] Connection timeout after 30s
+2026-10-07 09:43:12 INFO [db] User 4821 logged in
+2026-10-07 09:44:01 INFO [auth] Mail queue length 58
+2026-10-07 09:44:19 INFO [scheduler] Invalid token for session 330
+2026-10-07 09:44:43 WARN [mailer] Disk usage at 91%
+2026-10-07 09:44:52 INFO [mailer] Cache hit for key 77
+2026-10-07 09:44:57 INFO [scheduler] Request served in 143ms
+2026-10-07 09:45:04 DEBUG [mailer] Null reference in handler 12
+2026-10-07 09:45:25 DEBUG [auth] Disk usage at 91%
+2026-10-07 09:45:40 INFO [db] Disk usage at 91%
+2026-10-07 09:45:56 INFO [api] Null reference in handler 12
+2026-10-07 09:46:10 WARN [mailer] Request served in 143ms
+2026-10-07 09:46:22 DEBUG [mailer] Health check passed
+2026-10-07 09:46:30 INFO [scheduler] User 4821 logged in
+2026-10-07 09:47:28 DEBUG [cache] Cache hit for key 77
+2026-10-07 09:48:05 INFO [payments] Disk usage at 91%
+2026-10-07 09:48:45 DEBUG [payments] Null reference in handler 12
+2026-10-07 09:48:50 WARN [auth] Payment 5521 declined by gateway
+2026-10-07 09:48:58 INFO [mailer] Payment 5521 declined by gateway
+2026-10-07 09:49:28 INFO [cache] Connection timeout after 30s
+2026-10-07 09:50:00 ERROR [db] Disk usage at 91%
+2026-10-07 09:50:12 WARN [scheduler] Payment 5521 declined by gateway
+2026-10-07 09:50:26 DEBUG [mailer] Mail queue length 58
+2026-10-07 09:51:08 INFO [cache] Connection timeout after 30s
+2026-10-07 09:51:53 INFO [mailer] Health check passed
+2026-10-07 09:52:24 INFO [scheduler] Null reference in handler 12
+2026-10-07 09:52:26 DEBUG [mailer] Null reference in handler 12
+2026-10-07 09:52:47 ERROR [db] Invalid token for session 330
+2026-10-07 09:53:09 WARN [scheduler] Cache hit for key 77
+2026-10-07 09:53:30 DEBUG [payments] Cache hit for key 77
+2026-10-07 09:54:32 INFO [api] Connection timeout after 30s
+2026-10-07 09:54:44 WARN [payments] Slow query took 2400ms
+2026-10-07 09:54:51 INFO [cache] Cache hit for key 77
+2026-10-07 09:55:29 ERROR [cache] Invalid token for session 330
+2026-10-07 09:55:46 DEBUG [scheduler] Connection timeout after 30s
+2026-10-07 09:56:03 INFO [mailer] Cache hit for key 77
+2026-10-07 09:56:48 DEBUG [payments] Connection timeout after 30s
+2026-10-07 09:57:37 ERROR [cache] Null reference in handler 12
+2026-10-07 09:58:25 INFO [cache] Retrying job 912 attempt 3
+2026-10-07 09:58:41 DEBUG [auth] Null reference in handler 12
+2026-10-07 09:58:49 ERROR [cache] Payment 5521 declined by gateway
+2026-10-07 09:59:10 WARN [cache] Cache hit for key 77
+2026-10-07 10:01:09 WARN [payments] Disk usage at 91%
+2026-10-07 10:01:58 DEBUG [cache] Invalid token for session 330
+2026-10-07 10:02:08 INFO [db] Slow query took 2400ms
+2026-10-07 10:05:01 INFO [cache] Invalid token for session 330
+2026-10-07 10:05:14 WARN [scheduler] Retrying job 912 attempt 3
+2026-10-07 10:06:19 WARN [payments] Invalid token for session 330
+2026-10-07 10:06:54 DEBUG [auth] Cache hit for key 77
+2026-10-07 10:09:27 DEBUG [auth] Connection timeout after 30s
+2026-10-07 10:11:02 WARN [payments] Health check passed
+2026-10-07 10:11:40 WARN [cache] Invalid token for session 330
+2026-10-07 10:12:02 WARN [api] Disk usage at 91%
+2026-10-07 10:12:26 INFO [scheduler] Connection timeout after 30s
+2026-10-07 10:12:39 INFO [auth] Mail queue length 58
+2026-10-07 10:12:53 DEBUG [cache] Disk usage at 91%
+2026-10-07 10:12:57 WARN [payments] Null reference in handler 12
+2026-10-07 10:13:08 INFO [mailer] Health check passed
+2026-10-07 10:13:23 WARN [scheduler] Retrying job 912 attempt 3
+2026-10-07 10:13:27 INFO [payments] Connection timeout after 30s
+2026-10-07 10:13:39 DEBUG [db] Connection timeout after 30s
+2026-10-07 10:13:45 INFO [mailer] Health check passed
+2026-10-07 10:15:29 INFO [cache] Connection timeout after 30s
+2026-10-07 10:15:32 WARN [mailer] Request served in 143ms
+2026-10-07 10:15:58 DEBUG [api] Request served in 143ms
+2026-10-07 10:16:12 DEBUG [auth] Request served in 143ms
+2026-10-07 10:18:37 ERROR [mailer] User 4821 logged in
+2026-10-07 10:18:56 INFO [mailer] Invalid token for session 330
+2026-10-07 10:19:11 INFO [mailer] Retrying job 912 attempt 3
+2026-10-07 10:19:28 INFO [mailer] Payment 5521 declined by gateway
+2026-10-07 10:20:17 WARN [payments] Mail queue length 58
+2026-10-07 10:20:33 WARN [mailer] Health check passed
+2026-10-07 10:20:38 INFO [scheduler] Retrying job 912 attempt 3
+2026-10-07 10:20:41 INFO [mailer] Slow query took 2400ms
+2026-10-07 10:20:58 DEBUG [cache] Invalid token for session 330
+2026-10-07 10:21:23 INFO [db] Retrying job 912 attempt 3
+2026-10-07 10:21:50 ERROR [scheduler] Mail queue length 58
+2026-10-07 10:22:30 INFO [payments] Disk usage at 91%
+2026-10-07 10:23:04 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 10:23:21 INFO [auth] Retrying job 912 attempt 3
+2026-10-07 10:23:31 INFO [mailer] Slow query took 2400ms
+2026-10-07 10:23:40 WARN [scheduler] Connection timeout after 30s
+2026-10-07 10:24:25 INFO [api] Request served in 143ms
+2026-10-07 10:25:00 WARN [cache] Retrying job 912 attempt 3
+2026-10-07 10:26:16 INFO [auth] Cache hit for key 77
+2026-10-07 10:26:54 WARN [payments] Payment 5521 declined by gateway
+2026-10-07 10:27:31 INFO [auth] User 4821 logged in
+2026-10-07 10:27:49 INFO [cache] Slow query took 2400ms
+2026-10-07 10:27:55 INFO [db] Slow query took 2400ms
+2026-10-07 10:28:07 WARN [scheduler] Request served in 143ms
+2026-10-07 10:28:11 INFO [payments] User 4821 logged in
+2026-10-07 10:28:52 WARN [mailer] Null reference in handler 12
+2026-10-07 10:29:14 DEBUG [cache] Payment 5521 declined by gateway
+2026-10-07 10:31:34 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 10:32:05 INFO [mailer] Slow query took 2400ms
+2026-10-07 10:34:02 INFO [api] Retrying job 912 attempt 3
+2026-10-07 10:35:30 INFO [auth] Null reference in handler 12
+2026-10-07 10:35:31 INFO [auth] Health check passed
+2026-10-07 10:36:07 INFO [db] Slow query took 2400ms
+2026-10-07 10:36:10 DEBUG [scheduler] Connection timeout after 30s
+2026-10-07 10:36:23 INFO [api] Cache hit for key 77
+2026-10-07 10:36:59 INFO [auth] Health check passed
+2026-10-07 10:38:34 DEBUG [cache] Slow query took 2400ms
+2026-10-07 10:38:38 DEBUG [db] Invalid token for session 330
+2026-10-07 10:39:07 INFO [scheduler] Slow query took 2400ms
+2026-10-07 10:39:25 WARN [auth] Disk usage at 91%
+2026-10-07 10:39:42 DEBUG [cache] Retrying job 912 attempt 3
+2026-10-07 10:40:29 ERROR [mailer] Request served in 143ms
+2026-10-07 10:40:58 INFO [db] Mail queue length 58
+2026-10-07 10:41:05 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 10:41:43 WARN [db] Mail queue length 58
+2026-10-07 10:42:40 INFO [auth] Retrying job 912 attempt 3
+2026-10-07 10:42:42 ERROR [mailer] Health check passed
+2026-10-07 10:43:11 INFO [mailer] Mail queue length 58
+2026-10-07 10:44:47 INFO [db] Payment 5521 declined by gateway
+2026-10-07 10:45:19 DEBUG [auth] Payment 5521 declined by gateway
+2026-10-07 10:45:19 INFO [payments] Null reference in handler 12
+2026-10-07 10:46:19 INFO [auth] Connection timeout after 30s
+2026-10-07 10:46:31 WARN [auth] Cache hit for key 77
+2026-10-07 10:48:37 INFO [payments] Cache hit for key 77
+2026-10-07 10:49:21 WARN [api] User 4821 logged in
+2026-10-07 10:50:24 WARN [scheduler] Connection timeout after 30s
+2026-10-07 10:50:49 INFO [payments] Health check passed
+2026-10-07 10:51:37 INFO [mailer] Disk usage at 91%
+2026-10-07 10:51:49 DEBUG [mailer] Health check passed
+2026-10-07 10:52:42 ERROR [mailer] Health check passed
+2026-10-07 10:53:29 INFO [scheduler] Request served in 143ms
+2026-10-07 10:53:54 INFO [cache] Health check passed
+2026-10-07 10:53:57 DEBUG [payments] Invalid token for session 330
+2026-10-07 10:54:22 WARN [db] Slow query took 2400ms
+2026-10-07 10:54:50 WARN [scheduler] Invalid token for session 330
+2026-10-07 10:55:00 DEBUG [db] Slow query took 2400ms
+2026-10-07 10:55:02 INFO [auth] Disk usage at 91%
+2026-10-07 10:55:47 WARN [scheduler] Connection timeout after 30s
+2026-10-07 10:55:54 INFO [db] Null reference in handler 12
+2026-10-07 10:57:01 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 10:57:19 INFO [db] Connection timeout after 30s
+2026-10-07 10:58:15 ERROR [api] Payment 5521 declined by gateway
+2026-10-07 11:00:30 DEBUG [cache] User 4821 logged in
+2026-10-07 11:01:33 INFO [auth] Retrying job 912 attempt 3
+2026-10-07 11:05:58 WARN [api] Invalid token for session 330
+2026-10-07 11:06:32 INFO [mailer] Retrying job 912 attempt 3
+2026-10-07 11:07:35 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 11:08:19 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 11:08:38 DEBUG [payments] Retrying job 912 attempt 3
+2026-10-07 11:08:43 WARN [auth] Retrying job 912 attempt 3
+2026-10-07 11:10:04 DEBUG [scheduler] Request served in 143ms
+2026-10-07 11:10:28 DEBUG [cache] Payment 5521 declined by gateway
+2026-10-07 11:13:12 INFO [cache] Mail queue length 58
+2026-10-07 11:13:38 INFO [scheduler] Invalid token for session 330
+2026-10-07 11:17:43 INFO [db] Connection timeout after 30s
+2026-10-07 11:17:51 INFO [scheduler] Invalid token for session 330
+2026-10-07 11:17:57 INFO [payments] Retrying job 912 attempt 3
+2026-10-07 11:21:14 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 11:22:33 INFO [cache] Null reference in handler 12
+2026-10-07 11:22:37 INFO [db] Payment 5521 declined by gateway
+2026-10-07 11:22:38 WARN [mailer] Disk usage at 91%
+2026-10-07 11:22:48 WARN [mailer] Invalid token for session 330
+2026-10-07 11:22:50 INFO [cache] Slow query took 2400ms
+2026-10-07 11:25:43 DEBUG [api] Slow query took 2400ms
+2026-10-07 11:25:51 ERROR [payments] Health check passed
+2026-10-07 11:27:49 WARN [db] Disk usage at 91%
+2026-10-07 11:29:48 INFO [auth] Health check passed
+2026-10-07 11:30:08 DEBUG [scheduler] Null reference in handler 12
+2026-10-07 11:30:20 INFO [cache] Invalid token for session 330
+2026-10-07 11:30:26 INFO [mailer] Request served in 143ms
+2026-10-07 11:30:52 INFO [mailer] User 4821 logged in
+2026-10-07 11:31:07 INFO [db] Cache hit for key 77
+2026-10-07 11:35:05 INFO [auth] Connection timeout after 30s
+2026-10-07 11:35:07 INFO [api] Retrying job 912 attempt 3
+2026-10-07 11:35:14 WARN [scheduler] Health check passed
+2026-10-07 11:37:07 ERROR [auth] Connection timeout after 30s
+2026-10-07 11:38:02 INFO [db] Invalid token for session 330
+2026-10-07 11:39:17 INFO [scheduler] Health check passed
+2026-10-07 11:39:21 INFO [scheduler] User 4821 logged in
+2026-10-07 11:40:55 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 11:40:57 INFO [auth] Mail queue length 58
+2026-10-07 11:41:19 WARN [api] Mail queue length 58
+2026-10-07 11:42:43 INFO [auth] Cache hit for key 77
+2026-10-07 11:43:44 INFO [api] Null reference in handler 12
+2026-10-07 11:44:05 INFO [db] Health check passed
+2026-10-07 11:44:24 WARN [cache] Cache hit for key 77
+2026-10-07 11:46:07 WARN [payments] Retrying job 912 attempt 3
+2026-10-07 11:49:06 INFO [cache] Invalid token for session 330
+2026-10-07 11:50:26 INFO [scheduler] Health check passed
+2026-10-07 11:50:56 INFO [cache] Cache hit for key 77
+2026-10-07 11:51:28 INFO [db] User 4821 logged in
+2026-10-07 11:51:47 INFO [api] Disk usage at 91%
+2026-10-07 11:52:25 INFO [auth] Null reference in handler 12
+2026-10-07 11:54:26 WARN [api] Slow query took 2400ms
+2026-10-07 11:54:57 INFO [auth] Invalid token for session 330
+2026-10-07 11:55:09 WARN [mailer] Invalid token for session 330
+2026-10-07 11:56:08 INFO [cache] Health check passed
+2026-10-07 11:56:51 INFO [auth] Retrying job 912 attempt 3
+2026-10-07 11:56:56 INFO [scheduler] Mail queue length 58
+2026-10-07 11:57:07 ERROR [payments] Disk usage at 91%
+2026-10-07 11:57:16 DEBUG [scheduler] Cache hit for key 77
+2026-10-07 11:58:06 WARN [payments] Retrying job 912 attempt 3
+2026-10-07 11:59:00 INFO [mailer] Slow query took 2400ms
+2026-10-07 12:01:26 ERROR [mailer] Mail queue length 58
+2026-10-07 12:03:09 ERROR [scheduler] Slow query took 2400ms
+2026-10-07 12:04:43 WARN [scheduler] Cache hit for key 77
+2026-10-07 12:05:19 DEBUG [auth] Invalid token for session 330
+2026-10-07 12:06:53 INFO [db] Cache hit for key 77
+2026-10-07 12:06:54 DEBUG [scheduler] Disk usage at 91%
+2026-10-07 12:06:56 INFO [mailer] Retrying job 912 attempt 3
+2026-10-07 12:07:48 WARN [mailer] Mail queue length 58
+2026-10-07 12:08:53 WARN [payments] Health check passed
+2026-10-07 12:09:11 WARN [cache] Cache hit for key 77
+2026-10-07 12:09:40 DEBUG [scheduler] Payment 5521 declined by gateway
+2026-10-07 12:11:18 DEBUG [mailer] Null reference in handler 12
+2026-10-07 12:11:19 DEBUG [mailer] Invalid token for session 330
+2026-10-07 12:12:03 WARN [payments] User 4821 logged in
+2026-10-07 12:15:28 INFO [mailer] Mail queue length 58
+2026-10-07 12:16:05 INFO [cache] Null reference in handler 12
+2026-10-07 12:16:08 ERROR [api] Disk usage at 91%
+2026-10-07 12:16:11 WARN [mailer] Mail queue length 58
+2026-10-07 12:18:08 INFO [cache] Disk usage at 91%
+2026-10-07 12:20:36 INFO [db] Connection timeout after 30s
+2026-10-07 12:23:18 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 12:24:05 WARN [api] Payment 5521 declined by gateway
+2026-10-07 12:25:22 DEBUG [db] Request served in 143ms
+2026-10-07 12:26:20 INFO [api] Disk usage at 91%
+2026-10-07 12:26:41 INFO [mailer] User 4821 logged in
+2026-10-07 12:26:58 INFO [api] Invalid token for session 330
+2026-10-07 12:27:45 DEBUG [payments] Connection timeout after 30s
+2026-10-07 12:28:18 DEBUG [scheduler] Null reference in handler 12
+2026-10-07 12:30:35 WARN [auth] Connection timeout after 30s
+2026-10-07 12:31:03 INFO [payments] Health check passed
+2026-10-07 12:31:40 DEBUG [scheduler] Health check passed
+2026-10-07 12:33:15 INFO [db] Null reference in handler 12
+2026-10-07 12:33:47 DEBUG [cache] Payment 5521 declined by gateway
+2026-10-07 12:34:06 DEBUG [db] Slow query took 2400ms
+2026-10-07 12:35:01 INFO [api] Health check passed
+2026-10-07 12:35:02 INFO [api] Slow query took 2400ms
+2026-10-07 12:35:16 INFO [mailer] Invalid token for session 330
+2026-10-07 12:35:34 INFO [cache] User 4821 logged in
+2026-10-07 12:37:23 INFO [api] Connection timeout after 30s
+2026-10-07 12:40:13 ERROR [auth] Connection timeout after 30s
+2026-10-07 12:40:33 WARN [db] User 4821 logged in
+2026-10-07 12:43:02 INFO [scheduler] Health check passed
+2026-10-07 12:43:31 INFO [cache] Null reference in handler 12
+2026-10-07 12:45:13 DEBUG [cache] Null reference in handler 12
+2026-10-07 12:45:13 DEBUG [cache] Payment 5521 declined by gateway
+2026-10-07 12:46:07 INFO [api] Payment 5521 declined by gateway
+2026-10-07 12:47:50 INFO [api] Mail queue length 58
+2026-10-07 12:48:45 INFO [db] Slow query took 2400ms
+2026-10-07 12:49:27 INFO [payments] Cache hit for key 77
+2026-10-07 12:49:47 INFO [auth] Disk usage at 91%
+2026-10-07 12:50:30 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 12:52:02 ERROR [mailer] Mail queue length 58
+2026-10-07 12:53:00 WARN [scheduler] Invalid token for session 330
+2026-10-07 12:53:26 DEBUG [api] Invalid token for session 330
+2026-10-07 12:55:01 INFO [mailer] Disk usage at 91%
+2026-10-07 12:55:13 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 12:55:25 ERROR [cache] Invalid token for session 330
+2026-10-07 12:55:26 INFO [scheduler] Retrying job 912 attempt 3
+2026-10-07 12:55:58 INFO [cache] Slow query took 2400ms
+2026-10-07 12:55:59 INFO [scheduler] Mail queue length 58
+2026-10-07 12:58:09 WARN [auth] Cache hit for key 77
+2026-10-07 12:59:01 DEBUG [api] Connection timeout after 30s
+2026-10-07 13:00:18 INFO [db] User 4821 logged in
+2026-10-07 13:01:13 INFO [scheduler] Health check passed
+2026-10-07 13:03:25 INFO [db] Invalid token for session 330
+2026-10-07 13:05:22 INFO [auth] Null reference in handler 12
+2026-10-07 13:05:30 INFO [scheduler] Request served in 143ms
+2026-10-07 13:07:16 INFO [db] Null reference in handler 12
+2026-10-07 13:07:31 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 13:11:00 ERROR [db] Null reference in handler 12
+2026-10-07 13:11:10 DEBUG [cache] Null reference in handler 12
+2026-10-07 13:11:40 DEBUG [scheduler] Slow query took 2400ms
+2026-10-07 13:11:46 INFO [api] Disk usage at 91%
+2026-10-07 13:12:24 INFO [auth] Slow query took 2400ms
+2026-10-07 13:13:05 WARN [scheduler] Mail queue length 58
+2026-10-07 13:13:15 ERROR [payments] Health check passed
+2026-10-07 13:16:06 INFO [api] Health check passed
+2026-10-07 13:16:44 WARN [cache] Invalid token for session 330
+2026-10-07 13:16:46 ERROR [auth] Connection timeout after 30s
+2026-10-07 13:18:30 DEBUG [mailer] Request served in 143ms
+2026-10-07 13:19:38 DEBUG [mailer] Cache hit for key 77
+2026-10-07 13:19:39 WARN [auth] Connection timeout after 30s
+2026-10-07 13:20:09 DEBUG [payments] Invalid token for session 330
+2026-10-07 13:20:41 INFO [db] Invalid token for session 330
+2026-10-07 13:21:00 INFO [auth] Cache hit for key 77
+2026-10-07 13:21:36 INFO [payments] Cache hit for key 77
+2026-10-07 13:22:14 DEBUG [api] Invalid token for session 330
+2026-10-07 13:22:50 ERROR [auth] Null reference in handler 12
+2026-10-07 13:22:54 WARN [auth] User 4821 logged in
+2026-10-07 13:25:52 WARN [db] Invalid token for session 330
+2026-10-07 13:26:26 WARN [scheduler] Health check passed
+2026-10-07 13:26:44 ERROR [db] Disk usage at 91%
+2026-10-07 13:29:05 WARN [api] Invalid token for session 330
+2026-10-07 13:29:24 INFO [db] Disk usage at 91%
+2026-10-07 13:29:58 INFO [db] User 4821 logged in
+2026-10-07 13:30:27 DEBUG [scheduler] Connection timeout after 30s
+2026-10-07 13:30:53 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 13:31:23 INFO [scheduler] Health check passed
+2026-10-07 13:32:44 DEBUG [auth] Null reference in handler 12
+2026-10-07 13:35:17 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 13:38:57 DEBUG [db] Cache hit for key 77
+2026-10-07 13:39:21 DEBUG [payments] Connection timeout after 30s
+2026-10-07 13:39:51 DEBUG [api] Payment 5521 declined by gateway
+2026-10-07 13:40:12 INFO [payments] Disk usage at 91%
+2026-10-07 13:40:59 INFO [mailer] Slow query took 2400ms
+2026-10-07 13:41:29 INFO [scheduler] Mail queue length 58
+2026-10-07 13:44:22 INFO [payments] User 4821 logged in
+2026-10-07 13:45:19 INFO [scheduler] Disk usage at 91%
+2026-10-07 13:46:52 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 13:48:11 DEBUG [api] Cache hit for key 77
+2026-10-07 13:48:47 INFO [scheduler] User 4821 logged in
+2026-10-07 13:49:28 INFO [auth] Cache hit for key 77
+2026-10-07 13:50:07 INFO [auth] Cache hit for key 77
+2026-10-07 13:51:19 INFO [payments] Connection timeout after 30s
+2026-10-07 13:51:54 INFO [cache] Health check passed
+2026-10-07 13:54:04 WARN [mailer] Connection timeout after 30s
+2026-10-07 13:54:18 DEBUG [auth] Connection timeout after 30s
+2026-10-07 13:54:52 ERROR [api] Mail queue length 58
+2026-10-07 13:56:19 INFO [mailer] Health check passed
+2026-10-07 13:56:27 DEBUG [api] Disk usage at 91%
+2026-10-07 13:56:53 INFO [mailer] Request served in 143ms
+2026-10-07 13:56:57 DEBUG [auth] Slow query took 2400ms
+2026-10-07 13:57:45 WARN [db] Null reference in handler 12
+2026-10-07 13:58:57 ERROR [api] User 4821 logged in
+2026-10-07 14:00:40 INFO [auth] Health check passed
+2026-10-07 14:02:05 INFO [payments] Cache hit for key 77
+2026-10-07 14:02:31 ERROR [auth] Null reference in handler 12
+2026-10-07 14:02:34 INFO [auth] Request served in 143ms
+2026-10-07 14:04:59 INFO [payments] Mail queue length 58
+2026-10-07 14:06:57 WARN [payments] Request served in 143ms
+2026-10-07 14:07:08 DEBUG [db] Request served in 143ms
+2026-10-07 14:08:41 WARN [payments] Null reference in handler 12
+2026-10-07 14:09:29 DEBUG [db] Disk usage at 91%
+2026-10-07 14:09:33 WARN [mailer] Request served in 143ms
+2026-10-07 14:10:02 INFO [payments] Null reference in handler 12
+2026-10-07 14:10:58 WARN [db] User 4821 logged in
+2026-10-07 14:11:40 WARN [payments] Null reference in handler 12
+2026-10-07 14:13:29 WARN [cache] User 4821 logged in
+2026-10-07 14:15:15 INFO [cache] Invalid token for session 330
+2026-10-07 14:18:40 DEBUG [cache] Invalid token for session 330
+2026-10-07 14:18:50 ERROR [db] Null reference in handler 12
+2026-10-07 14:19:11 WARN [mailer] Slow query took 2400ms
+2026-10-07 14:20:02 WARN [scheduler] Slow query took 2400ms
+2026-10-07 14:22:03 INFO [mailer] Null reference in handler 12
+2026-10-07 14:25:54 WARN [api] Payment 5521 declined by gateway
+2026-10-07 14:26:36 DEBUG [cache] Mail queue length 58
+2026-10-07 14:27:16 WARN [api] Request served in 143ms
+2026-10-07 14:27:24 DEBUG [mailer] Slow query took 2400ms
+2026-10-07 14:29:02 WARN [mailer] Cache hit for key 77
+2026-10-07 14:29:52 DEBUG [scheduler] Disk usage at 91%
+2026-10-07 14:30:58 DEBUG [db] Request served in 143ms
+2026-10-07 14:31:17 WARN [scheduler] Cache hit for key 77
+2026-10-07 14:32:31 WARN [db] Null reference in handler 12
+2026-10-07 14:36:16 INFO [db] Mail queue length 58
+2026-10-07 14:39:36 WARN [scheduler] Slow query took 2400ms
+2026-10-07 14:39:42 DEBUG [auth] Health check passed
+2026-10-07 14:40:11 INFO [auth] Mail queue length 58
+2026-10-07 14:40:19 ERROR [db] Cache hit for key 77
+2026-10-07 14:40:33 DEBUG [db] Health check passed
+2026-10-07 14:41:40 DEBUG [db] Cache hit for key 77
+2026-10-07 14:42:56 WARN [scheduler] Mail queue length 58
+2026-10-07 14:43:37 INFO [db] Mail queue length 58
+2026-10-07 14:44:07 INFO [mailer] Disk usage at 91%
+2026-10-07 14:46:20 INFO [db] Health check passed
+2026-10-07 14:46:50 WARN [mailer] Retrying job 912 attempt 3
+2026-10-07 14:47:33 INFO [cache] Request served in 143ms
+2026-10-07 14:48:59 INFO [payments] Disk usage at 91%
+2026-10-07 14:50:26 INFO [cache] Mail queue length 58
+2026-10-07 14:51:00 DEBUG [db] Connection timeout after 30s
+2026-10-07 14:51:39 INFO [auth] User 4821 logged in
+2026-10-07 14:51:46 DEBUG [api] Mail queue length 58
+2026-10-07 14:52:37 INFO [payments] Invalid token for session 330
+2026-10-07 14:53:59 WARN [db] Retrying job 912 attempt 3
+2026-10-07 14:54:57 INFO [cache] Request served in 143ms
+2026-10-07 14:54:58 WARN [auth] Retrying job 912 attempt 3
+2026-10-07 14:55:35 WARN [api] Retrying job 912 attempt 3
+2026-10-07 14:56:47 INFO [mailer] Invalid token for session 330
+2026-10-07 15:00:05 INFO [payments] Invalid token for session 330
+2026-10-07 15:00:23 WARN [mailer] User 4821 logged in
+2026-10-07 15:01:34 INFO [cache] Disk usage at 91%
+2026-10-07 15:04:00 INFO [auth] Cache hit for key 77
+2026-10-07 15:09:15 DEBUG [db] Cache hit for key 77
+2026-10-07 15:11:32 WARN [cache] Health check passed
+2026-10-07 15:12:01 WARN [mailer] User 4821 logged in
+2026-10-07 15:13:37 INFO [mailer] Disk usage at 91%
+2026-10-07 15:15:25 DEBUG [scheduler] Payment 5521 declined by gateway
+2026-10-07 15:16:09 INFO [auth] Mail queue length 58
+2026-10-07 15:17:39 INFO [payments] Payment 5521 declined by gateway
+2026-10-07 15:18:12 WARN [api] Connection timeout after 30s
+2026-10-07 15:18:52 INFO [auth] Mail queue length 58
+2026-10-07 15:20:15 WARN [api] Cache hit for key 77
+2026-10-07 15:20:16 DEBUG [payments] User 4821 logged in
+2026-10-07 15:24:07 WARN [api] Health check passed
+2026-10-07 15:24:44 INFO [cache] Slow query took 2400ms
+2026-10-07 15:25:09 INFO [auth] Payment 5521 declined by gateway
+2026-10-07 15:27:49 INFO [payments] Retrying job 912 attempt 3
+2026-10-07 15:28:19 INFO [cache] Request served in 143ms
+2026-10-07 15:30:02 INFO [cache] Health check passed
+2026-10-07 15:31:01 INFO [auth] Cache hit for key 77
+2026-10-07 15:31:29 ERROR [scheduler] Health check passed
+2026-10-07 15:32:54 INFO [payments] Health check passed
+2026-10-07 15:32:55 INFO [mailer] Slow query took 2400ms
+2026-10-07 15:33:54 INFO [mailer] User 4821 logged in
+2026-10-07 15:35:02 DEBUG [db] Invalid token for session 330
+2026-10-07 15:35:25 INFO [api] Null reference in handler 12
+2026-10-07 15:36:00 DEBUG [scheduler] Request served in 143ms
+2026-10-07 15:37:36 DEBUG [payments] Payment 5521 declined by gateway
+2026-10-07 15:39:41 INFO [cache] Mail queue length 58
+2026-10-07 15:43:00 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 15:46:06 INFO [scheduler] Disk usage at 91%
+2026-10-07 15:47:07 INFO [api] Cache hit for key 77
+2026-10-07 15:47:47 DEBUG [auth] Payment 5521 declined by gateway
+2026-10-07 15:52:00 INFO [auth] Health check passed
+2026-10-07 15:52:19 INFO [payments] Request served in 143ms
+2026-10-07 15:54:03 INFO [cache] Health check passed
+2026-10-07 15:54:09 INFO [payments] Cache hit for key 77
+2026-10-07 15:58:58 INFO [mailer] User 4821 logged in
+2026-10-07 16:00:30 DEBUG [auth] Connection timeout after 30s
+2026-10-07 16:04:12 WARN [payments] Cache hit for key 77
+2026-10-07 16:04:24 INFO [api] Disk usage at 91%
+2026-10-07 16:08:04 INFO [api] Request served in 143ms
+2026-10-07 16:11:16 INFO [api] Cache hit for key 77
+2026-10-07 16:12:04 WARN [cache] Request served in 143ms
+2026-10-07 16:14:19 DEBUG [auth] Retrying job 912 attempt 3
+2026-10-07 16:14:43 WARN [db] Invalid token for session 330
+2026-10-07 16:16:49 ERROR [scheduler] Null reference in handler 12
+2026-10-07 16:17:05 DEBUG [db] User 4821 logged in
+2026-10-07 16:26:57 DEBUG [payments] Connection timeout after 30s
+2026-10-07 16:29:54 DEBUG [auth] Invalid token for session 330
+2026-10-07 16:30:07 INFO [payments] Request served in 143ms
+2026-10-07 16:30:51 INFO [scheduler] Slow query took 2400ms
+2026-10-07 16:32:22 INFO [scheduler] Health check passed
+2026-10-07 16:32:38 INFO [db] Cache hit for key 77
+2026-10-07 16:35:02 WARN [auth] Slow query took 2400ms
+2026-10-07 16:37:22 WARN [scheduler] Health check passed
+2026-10-07 16:39:46 INFO [mailer] Health check passed
+2026-10-07 16:43:02 DEBUG [cache] Health check passed
+2026-10-07 16:44:05 INFO [db] Invalid token for session 330
+2026-10-07 16:44:50 ERROR [mailer] Disk usage at 91%
+2026-10-07 16:48:14 INFO [mailer] Null reference in handler 12
+2026-10-07 16:49:29 DEBUG [db] Retrying job 912 attempt 3
+2026-10-07 16:51:00 ERROR [cache] User 4821 logged in
+2026-10-07 16:51:45 DEBUG [payments] Connection timeout after 30s
+2026-10-07 16:52:44 INFO [db] Request served in 143ms
+2026-10-07 16:58:00 ERROR [payments] Slow query took 2400ms
+2026-10-07 16:58:23 INFO [mailer] Connection timeout after 30s
+2026-10-07 17:00:10 INFO [api] User 4821 logged in
+2026-10-07 17:02:43 WARN [cache] Disk usage at 91%
+2026-10-07 17:04:22 INFO [scheduler] Cache hit for key 77
+2026-10-07 17:04:47 INFO [api] Mail queue length 58
+2026-10-07 17:08:14 WARN [payments] Retrying job 912 attempt 3
+2026-10-07 17:11:27 INFO [api] User 4821 logged in
+2026-10-07 17:19:47 WARN [payments] Retrying job 912 attempt 3
+2026-10-07 17:22:10 DEBUG [mailer] Connection timeout after 30s
+2026-10-07 17:23:55 INFO [api] Health check passed
+2026-10-07 17:27:46 INFO [api] Health check passed
+2026-10-07 17:29:55 INFO [mailer] Slow query took 2400ms
+2026-10-07 17:30:33 ERROR [mailer] Disk usage at 91%
+2026-10-07 17:31:21 INFO [scheduler] Request served in 143ms
+2026-10-07 17:36:49 INFO [payments] Cache hit for key 77
+2026-10-07 17:36:54 INFO [mailer] User 4821 logged in
+2026-10-07 17:41:40 DEBUG [scheduler] Mail queue length 58
+2026-10-07 17:42:11 INFO [mailer] Cache hit for key 77
+2026-10-07 17:43:01 DEBUG [mailer] Cache hit for key 77
+2026-10-07 17:49:36 INFO [cache] Invalid token for session 330
+2026-10-07 17:54:32 INFO [payments] Retrying job 912 attempt 3
+2026-10-07 17:55:01 WARN [db] Disk usage at 91%
+2026-10-07 17:58:56 WARN [auth] Health check passed
+2026-10-07 18:01:51 ERROR [scheduler] Retrying job 912 attempt 3
+2026-10-07 18:02:40 INFO [scheduler] Payment 5521 declined by gateway
+2026-10-07 18:07:12 WARN [auth] Mail queue length 58
+2026-10-07 18:09:11 INFO [cache] User 4821 logged in
+2026-10-07 18:09:56 WARN [auth] Cache hit for key 77
+2026-10-07 18:15:22 INFO [db] Connection timeout after 30s
+2026-10-07 18:16:18 DEBUG [auth] Mail queue length 58
+2026-10-07 18:18:25 DEBUG [payments] Connection timeout after 30s
+2026-10-07 18:19:13 INFO [cache] Request served in 143ms
+2026-10-07 18:23:50 INFO [api] Cache hit for key 77
+2026-10-07 18:27:07 ERROR [mailer] Invalid token for session 330
+2026-10-07 18:34:51 DEBUG [payments] Slow query took 2400ms
+2026-10-07 18:39:56 INFO [payments] Request served in 143ms
+2026-10-07 18:41:37 INFO [mailer] Disk usage at 91%
+2026-10-07 18:46:21 INFO [payments] User 4821 logged in
+2026-10-07 18:54:48 WARN [db] Health check passed
+2026-10-07 19:10:46 INFO [db] User 4821 logged in
+2026-10-07 19:19:51 INFO [auth] Health check passed
+2026-10-07 19:33:26 DEBUG [payments] Retrying job 912 attempt 3
+2026-10-07 19:43:17 WARN [db] Mail queue length 58
+2026-10-07 19:53:09 DEBUG [db] Request served in 143ms
+2026-10-07 19:54:55 WARN [payments] Request served in 143ms
+2026-10-07 19:58:43 INFO [api] Health check passed
+2026-10-07 20:10:13 INFO [auth] User 4821 logged in
+2026-10-07 20:11:47 INFO [api] Cache hit for key 77
+2026-10-07 20:45:05 INFO [mailer] Slow query took 2400ms
+2026-10-07 20:54:58 ERROR [payments] Cache hit for key 77
+2026-10-07 21:26:26 WARN [auth] Payment 5521 declined by gateway
+2026-10-07 21:32:23 ERROR [scheduler] Payment 5521 declined by gateway
