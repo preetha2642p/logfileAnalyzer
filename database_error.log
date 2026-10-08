@@ -1,0 +1,8 @@
+2026-10-08 12:20:11 INFO [Database] Attempting database connection
+2026-10-08 12:20:11 ERROR [MySQL] Failed to connect to database
+2026-10-08 12:20:12 ERROR [MySQL] Communications link failure
+2026-10-08 12:20:13 WARN [Database] Retrying connection attempt
+2026-10-08 12:20:15 ERROR [MySQL] Access denied for database user
+2026-10-08 12:20:16 ERROR [Database] Could not create database connection
+2026-10-08 12:25:10 ERROR [MongoDB] Connection refused on port 27017
+2026-10-08 12:25:11 INFO [Database] Database connection failed

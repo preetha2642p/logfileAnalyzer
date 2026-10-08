@@ -1,0 +1,8 @@
+2026-10-08 13:10:01 INFO [Auth] User login attempt
+2026-10-08 13:10:01 WARN [Auth] Invalid password
+2026-10-08 13:10:05 INFO [Auth] Administrator login attempt
+2026-10-08 13:10:06 ERROR [Auth] Authentication failed
+2026-10-08 13:10:10 ERROR [Auth] Account temporarily locked
+2026-10-08 13:12:22 WARN [Auth] Unauthorized access attempt
+2026-10-08 13:12:25 ERROR [Auth] Access denied
+2026-10-08 13:14:30 ERROR [Auth] JWT token validation failed

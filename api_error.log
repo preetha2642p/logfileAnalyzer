@@ -1,0 +1,8 @@
+2026-10-08 14:01:10 INFO [API] Sending request to user service
+2026-10-08 14:01:12 ERROR [API] Request failed with status 404
+2026-10-08 14:01:13 ERROR [API] User resource was not found
+2026-10-08 14:05:33 ERROR [API] POST /api/orders returned 500
+2026-10-08 14:05:34 ERROR [API] Failed to process order
+2026-10-08 14:07:20 ERROR [API] Request timeout after 30 seconds
+2026-10-08 14:10:17 WARN [API] Rate limit exceeded
+2026-10-08 14:12:33 ERROR [API] Third party service unavailable

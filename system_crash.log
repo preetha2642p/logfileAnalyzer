@@ -1,0 +1,8 @@
+2026-10-08 15:30:11 INFO [System] System monitoring started
+2026-10-08 15:45:02 WARN [System] CPU usage reached 95 percent
+2026-10-08 15:45:10 WARN [System] Memory usage reached 96 percent
+2026-10-08 15:46:33 ERROR [System] Out of memory error detected
+2026-10-08 15:46:34 ERROR [System] Critical process terminated
+2026-10-08 15:46:35 FATAL [System] System crash detected
+2026-10-08 15:46:36 ERROR [System] Core dump generated
+2026-10-08 15:50:10 INFO [System] System restarted successfully

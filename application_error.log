@@ -1,0 +1,8 @@
+2026-10-08 10:14:32 INFO [Application] Application started
+2026-10-08 10:14:35 INFO [Application] Loading configuration
+2026-10-08 10:15:01 INFO [Database] Connecting to database
+2026-10-08 10:15:02 ERROR [Database] Connection refused by database server
+2026-10-08 10:15:03 ERROR [Application] Failed to initialize user service
+2026-10-08 10:15:04 WARN [Application] Retrying database connection
+2026-10-08 10:15:09 ERROR [Application] Application failed to start
+2026-10-08 10:15:10 INFO [Application] Shutting down application

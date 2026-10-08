@@ -1,0 +1,8 @@
+2026-10-08 11:02:11 INFO [Server] HTTP server started on port 8080
+2026-10-08 11:05:14 INFO [HTTP] GET /home request received
+2026-10-08 11:05:15 INFO [HTTP] GET /home request completed
+2026-10-08 11:07:22 ERROR [HTTP] 500 Internal Server Error on /api/users
+2026-10-08 11:07:23 ERROR [Server] User controller request failed
+2026-10-08 11:08:10 WARN [Server] High memory usage detected
+2026-10-08 11:09:33 ERROR [HTTP] 502 Bad Gateway on /api/orders
+2026-10-08 11:10:01 ERROR [HTTP] 503 Service Unavailable on /api/payments
